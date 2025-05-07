@@ -12,7 +12,7 @@ from business_calculator import perform_business_calculation, BusinessCalculatio
 # Create the agent
 agent = Agent(
     name="business_calculator",
-    port=8003,
+    port=8002,
     mailbox=True        
 )
 
