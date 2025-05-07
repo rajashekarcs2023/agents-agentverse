@@ -6,10 +6,31 @@ from typing import Dict, Any
 import json
 import logging
 import traceback  # Added for detailed error tracing
+import os
+from datetime import datetime
 
 # Configure logging - increase level for more details
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("mcp_client")
+
+# Add file logging
+log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.join(log_dir, f"mcp_client_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
+
+# Create file handler
+file_handler = logging.FileHandler(log_file)
+file_handler.setLevel(logging.DEBUG)
+file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(file_formatter)
+logger.addHandler(file_handler)
+
+# Function to log to file directly
+def log_to_file(message):
+    """Write a message directly to the log file"""
+    with open(log_file, 'a') as f:
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
+        f.write(f"[{timestamp}] {message}\n")
 
 # Global variable to store MCP session
 mcp_session = None
@@ -57,9 +78,17 @@ async def search_airbnb_listings(location: str, limit: int = 4, **kwargs):
     """Search for Airbnb listings with detailed logging"""
     global mcp_session
     
+    # Log to both console and file
     logger.debug(f"==== SEARCH REQUEST STARTED ====")
     logger.debug(f"Location: {location}")
     logger.debug(f"Additional parameters: {kwargs}")
+    
+    # Direct file logging
+    log_to_file(f"==== SEARCH REQUEST STARTED ====")
+    log_to_file(f"Location: {location}")
+    log_to_file(f"Additional parameters: {kwargs}")
+    log_to_file(f"Current time: {datetime.now().isoformat()}")
+    log_to_file(f"MCP session exists: {mcp_session is not None}")
     
     if not mcp_session:
         logger.error("No MCP session available")
@@ -70,10 +99,26 @@ async def search_airbnb_listings(location: str, limit: int = 4, **kwargs):
         params = {"location": location, **kwargs}
         logger.info(f"Searching for listings in {location} with params: {params}")
         
-        # Call the airbnb_search tool
+        # Call the airbnb_search tool with detailed logging
         logger.debug("About to call airbnb_search tool")
-        result = await mcp_session.call_tool("airbnb_search", params)
-        logger.debug(f"Tool call completed - Result type: {type(result)}")
+        log_to_file(f"CALLING MCP TOOL: airbnb_search with params: {params}")
+        
+        try:
+            start_time = datetime.now()
+            log_to_file(f"MCP CALL START TIME: {start_time.isoformat()}")
+            
+            result = await mcp_session.call_tool("airbnb_search", params)
+            
+            end_time = datetime.now()
+            duration = (end_time - start_time).total_seconds()
+            log_to_file(f"MCP CALL END TIME: {end_time.isoformat()}")
+            log_to_file(f"MCP CALL DURATION: {duration} seconds")
+            log_to_file(f"MCP CALL SUCCESS: Tool call completed")
+            logger.debug(f"Tool call completed in {duration} seconds - Result type: {type(result)}")
+        except Exception as call_error:
+            log_to_file(f"MCP CALL ERROR: {str(call_error)}")
+            log_to_file(f"ERROR TRACEBACK: {traceback.format_exc()}")
+            raise  # Re-raise the exception for normal error handling
         
         # Debug the content structure
         logger.debug(f"Content type: {type(result.content)}")
@@ -127,6 +172,7 @@ async def search_airbnb_listings(location: str, limit: int = 4, **kwargs):
                         
                         # Create a simple formatted output
                         logger.debug("Creating formatted output")
+                        log_to_file("CREATING FORMATTED OUTPUT FOR SEARCH RESULTS")
                         formatted_output = f"AIRBNB LISTINGS IN {location.upper()}\n\n"
                         formatted_output += f"Found {len(search_results)} listings. Showing top {len(simplified_listings)}:\n\n"
                         
@@ -138,6 +184,9 @@ async def search_airbnb_listings(location: str, limit: int = 4, **kwargs):
                             formatted_output += f"   URL: {listing['url']}\n\n"
                         
                         logger.debug("Returning successful result")
+                        log_to_file(f"FORMATTED OUTPUT CREATED (length: {len(formatted_output)})")
+                        log_to_file(f"FORMATTED OUTPUT SAMPLE: {formatted_output[:200]}...")
+                        
                         result_dict = {
                             "success": True,
                             "message": "Successfully retrieved listings",
@@ -145,7 +194,14 @@ async def search_airbnb_listings(location: str, limit: int = 4, **kwargs):
                             "listings": simplified_listings,
                             "total_listings": len(search_results)
                         }
+                        
+                        log_to_file("RESULT DICTIONARY CREATED WITH KEYS: " + ", ".join(result_dict.keys()))
+                        log_to_file(f"SUCCESS VALUE: {result_dict['success']}")
+                        log_to_file(f"TOTAL LISTINGS: {result_dict['total_listings']}")
+                        log_to_file(f"SIMPLIFIED LISTINGS COUNT: {len(result_dict['listings'])}")
+                        
                         logger.debug("==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====")
+                        log_to_file("==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====")
                         return result_dict
                         
                     except json.JSONDecodeError as json_err:
