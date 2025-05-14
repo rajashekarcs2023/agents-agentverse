@@ -1,0 +1,28 @@
+2025-05-08 09:58:12,008 - mcp_client - INFO - Connecting to Airbnb MCP server
+2025-05-08 09:58:14,024 - mcp_client - INFO - Connected to Airbnb MCP server with tools: ['airbnb_search', 'airbnb_listing_details']
+[2025-05-08 09:58:56.301558] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 09:58:56.301664] Location: Chicago
+[2025-05-08 09:58:56.301718] Additional parameters: {'checkin': '2023-11-03', 'checkout': '2023-11-05', 'adults': 2}
+[2025-05-08 09:58:56.301770] Current time: 2025-05-08T09:58:56.301741
+[2025-05-08 09:58:56.301816] MCP session exists: True
+2025-05-08 09:58:56,301 - mcp_client - INFO - Searching for listings in Chicago with params: {'location': 'Chicago', 'checkin': '2023-11-03', 'checkout': '2023-11-05', 'adults': 2}
+[2025-05-08 09:58:56.301983] CALLING MCP TOOL: airbnb_search with params: {'location': 'Chicago', 'checkin': '2023-11-03', 'checkout': '2023-11-05', 'adults': 2}
+[2025-05-08 09:58:56.302027] MCP CALL START TIME: 2025-05-08T09:58:56.302001
+[2025-05-08 09:58:57.685135] MCP CALL END TIME: 2025-05-08T09:58:57.685047
+[2025-05-08 09:58:57.685213] MCP CALL DURATION: 1.383046 seconds
+[2025-05-08 09:58:57.685239] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 09:58:57.685398] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 09:58:57.685435] FORMATTED OUTPUT CREATED (length: 916)
+[2025-05-08 09:58:57.685452] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN CHICAGO
+
+Found 18 listings. Showing top 4:
+
+1. All-glass gem by Chicago architect Harry Weese
+   Price: $738 for 5 nights
+   Rating: 4.73 out of 5 average rating,  73 reviews
+   ID:...
+[2025-05-08 09:58:57.685475] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 09:58:57.685494] SUCCESS VALUE: True
+[2025-05-08 09:58:57.685509] TOTAL LISTINGS: 18
+[2025-05-08 09:58:57.685526] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 09:58:57.685540] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====

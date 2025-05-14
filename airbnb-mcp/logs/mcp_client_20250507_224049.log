@@ -1,0 +1,103 @@
+2025-05-07 22:40:50,335 - mcp_client - INFO - Connecting to Airbnb MCP server
+2025-05-07 22:40:51,806 - mcp_client - INFO - Connected to Airbnb MCP server with tools: ['airbnb_search', 'airbnb_listing_details']
+[2025-05-07 22:41:26.109095] ==== SEARCH REQUEST STARTED ====
+[2025-05-07 22:41:26.109230] Location: San Francisco
+[2025-05-07 22:41:26.109292] Additional parameters: {'checkin': '2023-10-03', 'checkout': '2023-10-05', 'adults': 2}
+[2025-05-07 22:41:26.109349] Current time: 2025-05-07T22:41:26.109314
+[2025-05-07 22:41:26.109395] MCP session exists: True
+2025-05-07 22:41:26,109 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco', 'checkin': '2023-10-03', 'checkout': '2023-10-05', 'adults': 2}
+[2025-05-07 22:41:26.109524] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco', 'checkin': '2023-10-03', 'checkout': '2023-10-05', 'adults': 2}
+[2025-05-07 22:41:26.109569] MCP CALL START TIME: 2025-05-07T22:41:26.109542
+[2025-05-07 22:41:27.103639] MCP CALL END TIME: 2025-05-07T22:41:27.103548
+[2025-05-07 22:41:27.103713] MCP CALL DURATION: 0.994006 seconds
+[2025-05-07 22:41:27.103738] MCP CALL SUCCESS: Tool call completed
+[2025-05-07 22:41:27.103948] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-07 22:41:27.103976] FORMATTED OUTPUT CREATED (length: 867)
+[2025-05-07 22:41:27.103993] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 4:
+
+1. Spot-on location for classic San Fran must-do’s
+   Price: $532 for 5 nights
+   Rating: 4.68 out of 5 average rating,  412 review...
+[2025-05-07 22:41:27.104013] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-07 22:41:27.104029] SUCCESS VALUE: True
+[2025-05-07 22:41:27.104044] TOTAL LISTINGS: 18
+[2025-05-07 22:41:27.104058] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-07 22:41:27.104072] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-07 22:42:55.259882] ==== SEARCH REQUEST STARTED ====
+[2025-05-07 22:42:55.259983] Location: Mountain View downtown
+[2025-05-07 22:42:55.260038] Additional parameters: {'checkin': '2025-05-10', 'adults': 2}
+[2025-05-07 22:42:55.260089] Current time: 2025-05-07T22:42:55.260059
+[2025-05-07 22:42:55.260133] MCP session exists: True
+2025-05-07 22:42:55,260 - mcp_client - INFO - Searching for listings in Mountain View downtown with params: {'location': 'Mountain View downtown', 'checkin': '2025-05-10', 'adults': 2}
+[2025-05-07 22:42:55.260244] CALLING MCP TOOL: airbnb_search with params: {'location': 'Mountain View downtown', 'checkin': '2025-05-10', 'adults': 2}
+[2025-05-07 22:42:55.260314] MCP CALL START TIME: 2025-05-07T22:42:55.260286
+[2025-05-07 22:42:56.120666] MCP CALL END TIME: 2025-05-07T22:42:56.120575
+[2025-05-07 22:42:56.120742] MCP CALL DURATION: 0.860289 seconds
+[2025-05-07 22:42:56.120767] MCP CALL SUCCESS: Tool call completed
+[2025-05-07 22:42:56.120889] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-07 22:42:56.120914] FORMATTED OUTPUT CREATED (length: 959)
+[2025-05-07 22:42:56.120933] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN MOUNTAIN VIEW DOWNTOWN
+
+Found 18 listings. Showing top 4:
+
+1. Keturah's Creek -Luxury Couples Tiny Cabin-8acres
+   Price: $353 for 1 night, originally $419
+   Rating: 4.91 out of 5 ...
+[2025-05-07 22:42:56.120989] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-07 22:42:56.121079] SUCCESS VALUE: True
+[2025-05-07 22:42:56.121110] TOTAL LISTINGS: 18
+[2025-05-07 22:42:56.121130] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-07 22:42:56.121149] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-07 22:57:45.275859] ==== SEARCH REQUEST STARTED ====
+[2025-05-07 22:57:45.276304] Location: Boston MIT
+[2025-05-07 22:57:45.276364] Additional parameters: {'checkin': '2025-05-15', 'checkout': '2025-05-19', 'adults': 2}
+[2025-05-07 22:57:45.276433] Current time: 2025-05-07T22:57:45.276402
+[2025-05-07 22:57:45.276472] MCP session exists: True
+2025-05-07 22:57:45,276 - mcp_client - INFO - Searching for listings in Boston MIT with params: {'location': 'Boston MIT', 'checkin': '2025-05-15', 'checkout': '2025-05-19', 'adults': 2}
+[2025-05-07 22:57:45.276631] CALLING MCP TOOL: airbnb_search with params: {'location': 'Boston MIT', 'checkin': '2025-05-15', 'checkout': '2025-05-19', 'adults': 2}
+[2025-05-07 22:57:45.276669] MCP CALL START TIME: 2025-05-07T22:57:45.276646
+[2025-05-07 22:57:46.180901] MCP CALL END TIME: 2025-05-07T22:57:46.180811
+[2025-05-07 22:57:46.180975] MCP CALL DURATION: 0.904165 seconds
+[2025-05-07 22:57:46.180999] MCP CALL SUCCESS: Tool call completed
+[2025-05-07 22:57:46.181107] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-07 22:57:46.181130] FORMATTED OUTPUT CREATED (length: 911)
+[2025-05-07 22:57:46.181148] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN BOSTON MIT
+
+Found 18 listings. Showing top 4:
+
+1. Steps from the T & Museum of Science
+   Price: $1,072 for 4 nights
+   Rating: 4.8 out of 5 average rating,  121 reviews
+   ID: 1308...
+[2025-05-07 22:57:46.181165] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-07 22:57:46.181181] SUCCESS VALUE: True
+[2025-05-07 22:57:46.181194] TOTAL LISTINGS: 18
+[2025-05-07 22:57:46.181208] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-07 22:57:46.181221] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-07 23:05:45.069367] ==== SEARCH REQUEST STARTED ====
+[2025-05-07 23:05:45.070334] Location: San Francisco
+[2025-05-07 23:05:45.070407] Additional parameters: {'checkin': '2023-10-24', 'checkout': '2023-10-26', 'adults': 2}
+[2025-05-07 23:05:45.070463] Current time: 2025-05-07T23:05:45.070429
+[2025-05-07 23:05:45.070508] MCP session exists: True
+2025-05-07 23:05:45,070 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco', 'checkin': '2023-10-24', 'checkout': '2023-10-26', 'adults': 2}
+[2025-05-07 23:05:45.070633] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco', 'checkin': '2023-10-24', 'checkout': '2023-10-26', 'adults': 2}
+[2025-05-07 23:05:45.070675] MCP CALL START TIME: 2025-05-07T23:05:45.070650
+[2025-05-07 23:05:46.049663] MCP CALL END TIME: 2025-05-07T23:05:46.049574
+[2025-05-07 23:05:46.049744] MCP CALL DURATION: 0.978924 seconds
+[2025-05-07 23:05:46.049769] MCP CALL SUCCESS: Tool call completed
+[2025-05-07 23:05:46.049916] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-07 23:05:46.049942] FORMATTED OUTPUT CREATED (length: 882)
+[2025-05-07 23:05:46.049959] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 4:
+
+1. Guest Perch · Dolores Park · Mission/Noe · Hot Tub
+   Price: $1,753 for 5 nights
+   Rating: 4.96 out of 5 average rating,  419 r...
+[2025-05-07 23:05:46.049977] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-07 23:05:46.049994] SUCCESS VALUE: True
+[2025-05-07 23:05:46.050009] TOTAL LISTINGS: 18
+[2025-05-07 23:05:46.050022] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-07 23:05:46.050036] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====

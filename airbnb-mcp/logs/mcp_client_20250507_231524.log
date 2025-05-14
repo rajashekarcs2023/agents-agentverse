@@ -1,0 +1,102 @@
+2025-05-07 23:15:25,227 - mcp_client - INFO - Connecting to Airbnb MCP server
+2025-05-07 23:15:26,803 - mcp_client - INFO - Connected to Airbnb MCP server with tools: ['airbnb_search', 'airbnb_listing_details']
+[2025-05-07 23:15:33.274267] ==== SEARCH REQUEST STARTED ====
+[2025-05-07 23:15:33.274414] Location: Iowa State University
+[2025-05-07 23:15:33.274485] Additional parameters: {'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-07 23:15:33.274546] Current time: 2025-05-07T23:15:33.274508
+[2025-05-07 23:15:33.274597] MCP session exists: True
+2025-05-07 23:15:33,274 - mcp_client - INFO - Searching for listings in Iowa State University with params: {'location': 'Iowa State University', 'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-07 23:15:33.274758] CALLING MCP TOOL: airbnb_search with params: {'location': 'Iowa State University', 'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-07 23:15:33.274807] MCP CALL START TIME: 2025-05-07T23:15:33.274779
+[2025-05-07 23:15:34.453199] MCP CALL END TIME: 2025-05-07T23:15:34.453117
+[2025-05-07 23:15:34.453276] MCP CALL DURATION: 1.178338 seconds
+[2025-05-07 23:15:34.453299] MCP CALL SUCCESS: Tool call completed
+[2025-05-07 23:15:34.453412] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-07 23:15:34.453440] FORMATTED OUTPUT CREATED (length: 928)
+[2025-05-07 23:15:34.453457] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN IOWA STATE UNIVERSITY
+
+Found 18 listings. Showing top 4:
+
+1. Briarwood Cottage - 1/2 mi from ISU, Pets Welcome
+   Price: $507 for 3 nights, originally $613
+   Rating: 5.0 out of 5 a...
+[2025-05-07 23:15:34.453477] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-07 23:15:34.453493] SUCCESS VALUE: True
+[2025-05-07 23:15:34.453509] TOTAL LISTINGS: 18
+[2025-05-07 23:15:34.453523] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-07 23:15:34.453537] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-07 23:17:26.302246] ==== SEARCH REQUEST STARTED ====
+[2025-05-07 23:17:26.302657] Location: Iowa State University
+[2025-05-07 23:17:26.302717] Additional parameters: {'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-07 23:17:26.302769] Current time: 2025-05-07T23:17:26.302739
+[2025-05-07 23:17:26.302811] MCP session exists: True
+2025-05-07 23:17:26,302 - mcp_client - INFO - Searching for listings in Iowa State University with params: {'location': 'Iowa State University', 'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-07 23:17:26.302954] CALLING MCP TOOL: airbnb_search with params: {'location': 'Iowa State University', 'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-07 23:17:26.303002] MCP CALL START TIME: 2025-05-07T23:17:26.302973
+[2025-05-07 23:17:27.068264] MCP CALL END TIME: 2025-05-07T23:17:27.068174
+[2025-05-07 23:17:27.068346] MCP CALL DURATION: 0.765201 seconds
+[2025-05-07 23:17:27.068371] MCP CALL SUCCESS: Tool call completed
+[2025-05-07 23:17:27.068482] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-07 23:17:27.068514] FORMATTED OUTPUT CREATED (length: 928)
+[2025-05-07 23:17:27.068533] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN IOWA STATE UNIVERSITY
+
+Found 18 listings. Showing top 4:
+
+1. District 08, 2 blocks from Main Street
+   Price: $215 for 3 nights
+   Rating: 4.86 out of 5 average rating,  100 reviews...
+[2025-05-07 23:17:27.068551] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-07 23:17:27.068567] SUCCESS VALUE: True
+[2025-05-07 23:17:27.068582] TOTAL LISTINGS: 18
+[2025-05-07 23:17:27.068597] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-07 23:17:27.068611] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 00:28:20.586489] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 00:28:20.587231] Location: UC Berkeley
+[2025-05-08 00:28:20.587299] Additional parameters: {'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-08 00:28:20.587371] Current time: 2025-05-08T00:28:20.587336
+[2025-05-08 00:28:20.587417] MCP session exists: True
+2025-05-08 00:28:20,587 - mcp_client - INFO - Searching for listings in UC Berkeley with params: {'location': 'UC Berkeley', 'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-08 00:28:20.587702] CALLING MCP TOOL: airbnb_search with params: {'location': 'UC Berkeley', 'checkin': '2025-05-10', 'checkout': '2025-05-13', 'adults': 2}
+[2025-05-08 00:28:20.587750] MCP CALL START TIME: 2025-05-08T00:28:20.587719
+[2025-05-08 00:28:21.400841] MCP CALL END TIME: 2025-05-08T00:28:21.400752
+[2025-05-08 00:28:21.400914] MCP CALL DURATION: 0.813033 seconds
+[2025-05-08 00:28:21.400938] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 00:28:21.401042] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 00:28:21.401068] FORMATTED OUTPUT CREATED (length: 836)
+[2025-05-08 00:28:21.401083] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN UC BERKELEY
+
+Found 18 listings. Showing top 4:
+
+1. Roomy Studio Walkable to UC Berkeley w/parking
+   Price: $484 for 3 nights, originally $577
+   Rating: 4.78 out of 5 average ratin...
+[2025-05-08 00:28:21.401101] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 00:28:21.401117] SUCCESS VALUE: True
+[2025-05-08 00:28:21.401131] TOTAL LISTINGS: 18
+[2025-05-08 00:28:21.401145] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 00:28:21.401158] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 00:31:26.845179] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 00:31:26.845276] Location: Arizona State University
+[2025-05-08 00:31:26.845329] Additional parameters: {'checkin': '2023-05-11', 'checkout': '2023-05-15', 'adults': 2}
+[2025-05-08 00:31:26.845433] Current time: 2025-05-08T00:31:26.845348
+[2025-05-08 00:31:26.845480] MCP session exists: True
+2025-05-08 00:31:26,845 - mcp_client - INFO - Searching for listings in Arizona State University with params: {'location': 'Arizona State University', 'checkin': '2023-05-11', 'checkout': '2023-05-15', 'adults': 2}
+[2025-05-08 00:31:26.845580] CALLING MCP TOOL: airbnb_search with params: {'location': 'Arizona State University', 'checkin': '2023-05-11', 'checkout': '2023-05-15', 'adults': 2}
+[2025-05-08 00:31:26.845616] MCP CALL START TIME: 2025-05-08T00:31:26.845594
+[2025-05-08 00:31:27.684301] MCP CALL END TIME: 2025-05-08T00:31:27.684210
+[2025-05-08 00:31:27.684381] MCP CALL DURATION: 0.838616 seconds
+[2025-05-08 00:31:27.684406] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 00:31:27.684553] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 00:31:27.684578] FORMATTED OUTPUT CREATED (length: 938)
+[2025-05-08 00:31:27.684595] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN ARIZONA STATE UNIVERSITY
+
+Found 18 listings. Showing top 4:
+
+1. *Best Location!*Walk to ASU!*Central Tempe Condo*
+   Price: $597 for 5 nights, originally $701
+   Rating: 4.87 out of...
+[2025-05-08 00:31:27.684613] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 00:31:27.684629] SUCCESS VALUE: True
+[2025-05-08 00:31:27.684643] TOTAL LISTINGS: 18
+[2025-05-08 00:31:27.684657] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 00:31:27.684673] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====

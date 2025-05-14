@@ -1,0 +1,386 @@
+2025-05-08 08:09:02,621 - mcp_client - INFO - Connecting to Airbnb MCP server
+2025-05-08 08:09:04,443 - mcp_client - INFO - Connected to Airbnb MCP server with tools: ['airbnb_search', 'airbnb_listing_details']
+[2025-05-08 08:30:49.143376] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:30:49.143477] Location: Sunnyvale Downtown
+[2025-05-08 08:30:49.143533] Additional parameters: {'checkin': '2025-05-11', 'checkout': '2025-05-15', 'adults': 2}
+[2025-05-08 08:30:49.143583] Current time: 2025-05-08T08:30:49.143553
+[2025-05-08 08:30:49.143627] MCP session exists: True
+2025-05-08 08:30:49,143 - mcp_client - INFO - Searching for listings in Sunnyvale Downtown with params: {'location': 'Sunnyvale Downtown', 'checkin': '2025-05-11', 'checkout': '2025-05-15', 'adults': 2}
+[2025-05-08 08:30:49.143803] CALLING MCP TOOL: airbnb_search with params: {'location': 'Sunnyvale Downtown', 'checkin': '2025-05-11', 'checkout': '2025-05-15', 'adults': 2}
+[2025-05-08 08:30:49.143846] MCP CALL START TIME: 2025-05-08T08:30:49.143821
+[2025-05-08 08:30:50.169348] MCP CALL END TIME: 2025-05-08T08:30:50.169252
+[2025-05-08 08:30:50.169424] MCP CALL DURATION: 1.025431 seconds
+[2025-05-08 08:30:50.169448] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:30:50.169616] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:30:50.169642] FORMATTED OUTPUT CREATED (length: 952)
+[2025-05-08 08:30:50.169658] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SUNNYVALE DOWNTOWN
+
+Found 18 listings. Showing top 4:
+
+1. Stylish 2BR Suite in Heart of Downtown Sunnyvale
+   Price: $519 for 4 nights, originally $608
+   Rating: 4.38 out of 5 aver...
+[2025-05-08 08:30:50.169677] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:30:50.169693] SUCCESS VALUE: True
+[2025-05-08 08:30:50.169708] TOTAL LISTINGS: 18
+[2025-05-08 08:30:50.169723] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:30:50.169737] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:34:01.504566] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:34:01.504614] Location: San Francisco Downtown
+[2025-05-08 08:34:01.504635] Additional parameters: {'checkin': '2023-10-26', 'checkout': '2023-10-30', 'adults': 2}
+[2025-05-08 08:34:01.504654] Current time: 2025-05-08T08:34:01.504643
+[2025-05-08 08:34:01.504670] MCP session exists: True
+2025-05-08 08:34:01,504 - mcp_client - INFO - Searching for listings in San Francisco Downtown with params: {'location': 'San Francisco Downtown', 'checkin': '2023-10-26', 'checkout': '2023-10-30', 'adults': 2}
+[2025-05-08 08:34:01.504718] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco Downtown', 'checkin': '2023-10-26', 'checkout': '2023-10-30', 'adults': 2}
+[2025-05-08 08:34:01.504738] MCP CALL START TIME: 2025-05-08T08:34:01.504727
+[2025-05-08 08:34:01.739442] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:34:01.739567] Location: San Francisco
+[2025-05-08 08:34:01.739672] Additional parameters: {}
+[2025-05-08 08:34:01.739752] Current time: 2025-05-08T08:34:01.739711
+[2025-05-08 08:34:01.739862] MCP session exists: True
+2025-05-08 08:34:01,739 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco'}
+[2025-05-08 08:34:01.740098] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco'}
+[2025-05-08 08:34:01.740284] MCP CALL START TIME: 2025-05-08T08:34:01.740204
+[2025-05-08 08:34:02.404695] MCP CALL END TIME: 2025-05-08T08:34:02.404605
+[2025-05-08 08:34:02.404774] MCP CALL DURATION: 0.899878 seconds
+[2025-05-08 08:34:02.404799] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:34:02.404957] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:34:02.404985] FORMATTED OUTPUT CREATED (length: 938)
+[2025-05-08 08:34:02.405003] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO DOWNTOWN
+
+Found 18 listings. Showing top 4:
+
+1. Stylish Room in The Heart Of San Francisco
+   Price: $590 for 5 nights
+   Rating: 4.76 out of 5 average rating,  531 re...
+[2025-05-08 08:34:02.405022] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:34:02.405047] SUCCESS VALUE: True
+[2025-05-08 08:34:02.405061] TOTAL LISTINGS: 18
+[2025-05-08 08:34:02.405074] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:34:02.405088] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:34:02.739281] MCP CALL END TIME: 2025-05-08T08:34:02.739193
+[2025-05-08 08:34:02.739357] MCP CALL DURATION: 0.998989 seconds
+[2025-05-08 08:34:02.739386] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:34:02.739546] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:34:02.739574] FORMATTED OUTPUT CREATED (length: 472)
+[2025-05-08 08:34:02.739592] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 2:
+
+1. Art-centric stay with views from atop Nob Hill
+   Price: $693 for 5 nights
+   Rating: 5.0 out of 5 average rating,  7 reviews
+  ...
+[2025-05-08 08:34:02.739612] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:34:02.739630] SUCCESS VALUE: True
+[2025-05-08 08:34:02.739650] TOTAL LISTINGS: 18
+[2025-05-08 08:34:02.739666] SIMPLIFIED LISTINGS COUNT: 2
+[2025-05-08 08:34:02.739682] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:36:12.024683] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:36:12.025304] Location: San Francisco
+[2025-05-08 08:36:12.025376] Additional parameters: {'adults': 2}
+[2025-05-08 08:36:12.025413] Current time: 2025-05-08T08:36:12.025395
+[2025-05-08 08:36:12.025436] MCP session exists: True
+2025-05-08 08:36:12,025 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco', 'adults': 2}
+[2025-05-08 08:36:12.025578] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco', 'adults': 2}
+[2025-05-08 08:36:12.025607] MCP CALL START TIME: 2025-05-08T08:36:12.025590
+[2025-05-08 08:36:12.967821] MCP CALL END TIME: 2025-05-08T08:36:12.967728
+[2025-05-08 08:36:12.967903] MCP CALL DURATION: 0.942138 seconds
+[2025-05-08 08:36:12.967929] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:36:12.968077] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:36:12.968108] FORMATTED OUTPUT CREATED (length: 855)
+[2025-05-08 08:36:12.968126] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 4:
+
+1. Stylish Room in The Heart Of San Francisco
+   Price: $590 for 5 nights
+   Rating: 4.76 out of 5 average rating,  531 reviews
+   ...
+[2025-05-08 08:36:12.968144] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:36:12.968162] SUCCESS VALUE: True
+[2025-05-08 08:36:12.968179] TOTAL LISTINGS: 18
+[2025-05-08 08:36:12.968193] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:36:12.968210] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:36:20.455415] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:36:20.455538] Location: Menlo Park, California
+[2025-05-08 08:36:20.455581] Additional parameters: {'checkin': '2023-11-24', 'checkout': '2023-11-27', 'adults': 2}
+[2025-05-08 08:36:20.455625] Current time: 2025-05-08T08:36:20.455601
+[2025-05-08 08:36:20.455663] MCP session exists: True
+2025-05-08 08:36:20,455 - mcp_client - INFO - Searching for listings in Menlo Park, California with params: {'location': 'Menlo Park, California', 'checkin': '2023-11-24', 'checkout': '2023-11-27', 'adults': 2}
+[2025-05-08 08:36:20.455783] CALLING MCP TOOL: airbnb_search with params: {'location': 'Menlo Park, California', 'checkin': '2023-11-24', 'checkout': '2023-11-27', 'adults': 2}
+[2025-05-08 08:36:20.455829] MCP CALL START TIME: 2025-05-08T08:36:20.455804
+[2025-05-08 08:36:21.420620] MCP CALL END TIME: 2025-05-08T08:36:21.420538
+[2025-05-08 08:36:21.420695] MCP CALL DURATION: 0.964734 seconds
+[2025-05-08 08:36:21.420720] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:36:21.420878] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:36:21.420903] FORMATTED OUTPUT CREATED (length: 940)
+[2025-05-08 08:36:21.420920] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN MENLO PARK, CALIFORNIA
+
+Found 18 listings. Showing top 4:
+
+1. Quaint Cottage Near Downtown Palo Alto
+   Price: $1,369 for 5 nights
+   Rating: 4.99 out of 5 average rating,  124 revi...
+[2025-05-08 08:36:21.420946] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:36:21.420962] SUCCESS VALUE: True
+[2025-05-08 08:36:21.420979] TOTAL LISTINGS: 18
+[2025-05-08 08:36:21.420992] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:36:21.421005] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:37:15.643121] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:37:15.643490] Location: San Francisco
+[2025-05-08 08:37:15.643524] Additional parameters: {'adults': 2}
+[2025-05-08 08:37:15.643549] Current time: 2025-05-08T08:37:15.643536
+[2025-05-08 08:37:15.643568] MCP session exists: True
+2025-05-08 08:37:15,643 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco', 'adults': 2}
+[2025-05-08 08:37:15.643634] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco', 'adults': 2}
+[2025-05-08 08:37:15.643653] MCP CALL START TIME: 2025-05-08T08:37:15.643642
+[2025-05-08 08:37:16.608894] MCP CALL END TIME: 2025-05-08T08:37:16.608812
+[2025-05-08 08:37:16.608961] MCP CALL DURATION: 0.96517 seconds
+[2025-05-08 08:37:16.608984] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:37:16.609132] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:37:16.609162] FORMATTED OUTPUT CREATED (length: 824)
+[2025-05-08 08:37:16.609180] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 4:
+
+1. Guest Perch · Dolores Park · Mission/Noe · Hot Tub
+   Price: $1,753 for 5 nights
+   Rating: 4.96 out of 5 average rating,  419 r...
+[2025-05-08 08:37:16.609208] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:37:16.609260] SUCCESS VALUE: True
+[2025-05-08 08:37:16.609286] TOTAL LISTINGS: 18
+[2025-05-08 08:37:16.609306] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:37:16.609324] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:40:07.127380] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:40:07.127889] Location: San Francisco
+[2025-05-08 08:40:07.127977] Additional parameters: {'checkin': '2023-11-02', 'checkout': '2023-11-04', 'adults': 2}
+[2025-05-08 08:40:07.128019] Current time: 2025-05-08T08:40:07.128000
+[2025-05-08 08:40:07.128047] MCP session exists: True
+2025-05-08 08:40:07,128 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco', 'checkin': '2023-11-02', 'checkout': '2023-11-04', 'adults': 2}
+[2025-05-08 08:40:07.128199] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco', 'checkin': '2023-11-02', 'checkout': '2023-11-04', 'adults': 2}
+[2025-05-08 08:40:07.128249] MCP CALL START TIME: 2025-05-08T08:40:07.128222
+[2025-05-08 08:40:08.118369] MCP CALL END TIME: 2025-05-08T08:40:08.118286
+[2025-05-08 08:40:08.118450] MCP CALL DURATION: 0.990064 seconds
+[2025-05-08 08:40:08.118474] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:40:08.118631] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:40:08.118659] FORMATTED OUTPUT CREATED (length: 902)
+[2025-05-08 08:40:08.118676] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 4:
+
+1. Stylish Room in The Heart Of San Francisco
+   Price: $590 for 5 nights
+   Rating: 4.76 out of 5 average rating,  531 reviews
+   ...
+[2025-05-08 08:40:08.118696] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:40:08.118713] SUCCESS VALUE: True
+[2025-05-08 08:40:08.118728] TOTAL LISTINGS: 18
+[2025-05-08 08:40:08.118741] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:40:08.118755] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:41:14.826495] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:41:14.826631] Location: London
+[2025-05-08 08:41:14.826674] Additional parameters: {'adults': 3}
+[2025-05-08 08:41:14.826733] Current time: 2025-05-08T08:41:14.826707
+[2025-05-08 08:41:14.826772] MCP session exists: True
+2025-05-08 08:41:14,826 - mcp_client - INFO - Searching for listings in London with params: {'location': 'London', 'adults': 3}
+[2025-05-08 08:41:14.826906] CALLING MCP TOOL: airbnb_search with params: {'location': 'London', 'adults': 3}
+[2025-05-08 08:41:14.826942] MCP CALL START TIME: 2025-05-08T08:41:14.826920
+[2025-05-08 08:41:15.803321] MCP CALL END TIME: 2025-05-08T08:41:15.803232
+[2025-05-08 08:41:15.803406] MCP CALL DURATION: 0.976312 seconds
+[2025-05-08 08:41:15.803429] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:41:15.803617] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:41:15.803666] FORMATTED OUTPUT CREATED (length: 888)
+[2025-05-08 08:41:15.803690] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN LONDON
+
+Found 18 listings. Showing top 4:
+
+1. Narrowboat utopia in Kings Cross
+   Price: $840 for 5 nights, originally $1,262
+   Rating: 4.93 out of 5 average rating,  42 reviews
+  ...
+[2025-05-08 08:41:15.803714] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:41:15.803736] SUCCESS VALUE: True
+[2025-05-08 08:41:15.803755] TOTAL LISTINGS: 18
+[2025-05-08 08:41:15.803775] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:41:15.803927] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:42:50.387823] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:42:50.389135] Location: london
+[2025-05-08 08:42:50.389202] Additional parameters: {'adults': 3}
+[2025-05-08 08:42:50.389239] Current time: 2025-05-08T08:42:50.389219
+[2025-05-08 08:42:50.389268] MCP session exists: True
+2025-05-08 08:42:50,389 - mcp_client - INFO - Searching for listings in london with params: {'location': 'london', 'adults': 3}
+[2025-05-08 08:42:50.389368] CALLING MCP TOOL: airbnb_search with params: {'location': 'london', 'adults': 3}
+[2025-05-08 08:42:50.389395] MCP CALL START TIME: 2025-05-08T08:42:50.389379
+[2025-05-08 08:42:51.459667] MCP CALL END TIME: 2025-05-08T08:42:51.459584
+[2025-05-08 08:42:51.459761] MCP CALL DURATION: 1.070205 seconds
+[2025-05-08 08:42:51.459803] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:42:51.459961] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:42:51.459990] FORMATTED OUTPUT CREATED (length: 885)
+[2025-05-08 08:42:51.460153] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN LONDON
+
+Found 18 listings. Showing top 4:
+
+1. Luxurious houseboat in London
+   Price: $2,260 for 5 nights
+   Rating: 4.94 out of 5 average rating,  35 reviews
+   ID: 109778280462268...
+[2025-05-08 08:42:51.460211] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:42:51.460241] SUCCESS VALUE: True
+[2025-05-08 08:42:51.460275] TOTAL LISTINGS: 18
+[2025-05-08 08:42:51.460306] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:42:51.460336] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:44:28.383232] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:44:28.384784] Location: Southampton
+[2025-05-08 08:44:28.384857] Additional parameters: {'checkin': '2025-06-03', 'checkout': '2025-06-05', 'adults': 2}
+[2025-05-08 08:44:28.384891] Current time: 2025-05-08T08:44:28.384874
+[2025-05-08 08:44:28.384913] MCP session exists: True
+2025-05-08 08:44:28,384 - mcp_client - INFO - Searching for listings in Southampton with params: {'location': 'Southampton', 'checkin': '2025-06-03', 'checkout': '2025-06-05', 'adults': 2}
+[2025-05-08 08:44:28.385095] CALLING MCP TOOL: airbnb_search with params: {'location': 'Southampton', 'checkin': '2025-06-03', 'checkout': '2025-06-05', 'adults': 2}
+[2025-05-08 08:44:28.385133] MCP CALL START TIME: 2025-05-08T08:44:28.385114
+[2025-05-08 08:44:29.205590] MCP CALL END TIME: 2025-05-08T08:44:29.205505
+[2025-05-08 08:44:29.205667] MCP CALL DURATION: 0.820391 seconds
+[2025-05-08 08:44:29.205692] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:44:29.205793] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:44:29.205825] FORMATTED OUTPUT CREATED (length: 866)
+[2025-05-08 08:44:29.205856] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SOUTHAMPTON
+
+Found 18 listings. Showing top 4:
+
+1. Enchanting Cottage in the Heart of Southampton Vil
+   Price: $407 for 2 nights, originally $443
+   Rating: 4.79 out of 5 average r...
+[2025-05-08 08:44:29.205874] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:44:29.205889] SUCCESS VALUE: True
+[2025-05-08 08:44:29.205903] TOTAL LISTINGS: 18
+[2025-05-08 08:44:29.205917] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:44:29.205934] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+2025-05-08 08:46:10,653 - mcp_client - INFO - Getting details for listing Enchanting Cottage in the Heart of Southampton Village with params: {'id': 'Enchanting Cottage in the Heart of Southampton Village'}
+[2025-05-08 08:46:50.334437] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:46:50.334759] Location: town
+[2025-05-08 08:46:50.334842] Additional parameters: {'adults': 2}
+[2025-05-08 08:46:50.334898] Current time: 2025-05-08T08:46:50.334872
+[2025-05-08 08:46:50.334935] MCP session exists: True
+2025-05-08 08:46:50,334 - mcp_client - INFO - Searching for listings in town with params: {'location': 'town', 'adults': 2}
+[2025-05-08 08:46:50.335198] CALLING MCP TOOL: airbnb_search with params: {'location': 'town', 'adults': 2}
+[2025-05-08 08:46:50.335273] MCP CALL START TIME: 2025-05-08T08:46:50.335240
+[2025-05-08 08:46:51.483013] MCP CALL END TIME: 2025-05-08T08:46:51.482964
+[2025-05-08 08:46:51.483072] MCP CALL DURATION: 1.147724 seconds
+[2025-05-08 08:46:51.483094] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:46:51.483234] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:46:51.483262] FORMATTED OUTPUT CREATED (length: 838)
+[2025-05-08 08:46:51.483280] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN TOWN
+
+Found 18 listings. Showing top 4:
+
+1. Fox Holler - 5 min to GSMNP entrance
+   Price: $588 for 5 nights
+   Rating: 4.89 out of 5 average rating,  63 reviews
+   ID: 38380163
+   ...
+[2025-05-08 08:46:51.483300] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:46:51.483317] SUCCESS VALUE: True
+[2025-05-08 08:46:51.483338] TOTAL LISTINGS: 18
+[2025-05-08 08:46:51.483356] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:46:51.483375] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:47:02.183597] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:47:02.183719] Location: San Francisco
+[2025-05-08 08:47:02.183811] Additional parameters: {}
+[2025-05-08 08:47:02.183885] Current time: 2025-05-08T08:47:02.183845
+[2025-05-08 08:47:02.183946] MCP session exists: True
+2025-05-08 08:47:02,183 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco'}
+[2025-05-08 08:47:02.184161] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco'}
+[2025-05-08 08:47:02.184234] MCP CALL START TIME: 2025-05-08T08:47:02.184192
+[2025-05-08 08:47:03.147547] MCP CALL END TIME: 2025-05-08T08:47:03.147458
+[2025-05-08 08:47:03.147634] MCP CALL DURATION: 0.963266 seconds
+[2025-05-08 08:47:03.147659] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:47:03.147801] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:47:03.147826] FORMATTED OUTPUT CREATED (length: 471)
+[2025-05-08 08:47:03.147843] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 2:
+
+1. Stylish Room in The Heart Of San Francisco
+   Price: $590 for 5 nights
+   Rating: 4.76 out of 5 average rating,  531 reviews
+   ...
+[2025-05-08 08:47:03.147861] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:47:03.147877] SUCCESS VALUE: True
+[2025-05-08 08:47:03.147891] TOTAL LISTINGS: 18
+[2025-05-08 08:47:03.147905] SIMPLIFIED LISTINGS COUNT: 2
+[2025-05-08 08:47:03.147919] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:47:06.740525] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:47:06.740615] Location: London
+[2025-05-08 08:47:06.740665] Additional parameters: {'adults': 3}
+[2025-05-08 08:47:06.740696] Current time: 2025-05-08T08:47:06.740678
+[2025-05-08 08:47:06.740729] MCP session exists: True
+2025-05-08 08:47:06,740 - mcp_client - INFO - Searching for listings in London with params: {'location': 'London', 'adults': 3}
+[2025-05-08 08:47:06.740801] CALLING MCP TOOL: airbnb_search with params: {'location': 'London', 'adults': 3}
+[2025-05-08 08:47:06.740832] MCP CALL START TIME: 2025-05-08T08:47:06.740813
+[2025-05-08 08:47:07.581524] MCP CALL END TIME: 2025-05-08T08:47:07.581464
+[2025-05-08 08:47:07.581615] MCP CALL DURATION: 0.840651 seconds
+[2025-05-08 08:47:07.581699] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:47:07.581881] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:47:07.581915] FORMATTED OUTPUT CREATED (length: 998)
+[2025-05-08 08:47:07.581936] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN LONDON
+
+Found 18 listings. Showing top 4:
+
+1. Iconic 2 bedroom Notting Hill roof terrace flat
+   Price: $1,429 for 5 nights, originally $2,165
+   Rating: 5.0 out of 5 average rating...
+[2025-05-08 08:47:07.581958] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:47:07.581978] SUCCESS VALUE: True
+[2025-05-08 08:47:07.581996] TOTAL LISTINGS: 18
+[2025-05-08 08:47:07.582013] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:47:07.582029] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:59:52.657552] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:59:52.658016] Location: Manhattan, New York City
+[2025-05-08 08:59:52.658066] Additional parameters: {'checkin': '2023-10-31', 'checkout': '2023-11-02', 'adults': 2}
+[2025-05-08 08:59:52.658110] Current time: 2025-05-08T08:59:52.658090
+[2025-05-08 08:59:52.658138] MCP session exists: True
+2025-05-08 08:59:52,658 - mcp_client - INFO - Searching for listings in Manhattan, New York City with params: {'location': 'Manhattan, New York City', 'checkin': '2023-10-31', 'checkout': '2023-11-02', 'adults': 2}
+[2025-05-08 08:59:52.658280] CALLING MCP TOOL: airbnb_search with params: {'location': 'Manhattan, New York City', 'checkin': '2023-10-31', 'checkout': '2023-11-02', 'adults': 2}
+[2025-05-08 08:59:52.658317] MCP CALL START TIME: 2025-05-08T08:59:52.658298
+[2025-05-08 08:59:53.759692] MCP CALL END TIME: 2025-05-08T08:59:53.759612
+[2025-05-08 08:59:53.759767] MCP CALL DURATION: 1.101314 seconds
+[2025-05-08 08:59:53.759792] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:59:53.759954] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:59:53.759982] FORMATTED OUTPUT CREATED (length: 955)
+[2025-05-08 08:59:53.759999] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN MANHATTAN, NEW YORK CITY
+
+Found 18 listings. Showing top 4:
+
+1. Dazzling Oasis | Times Square.  Restaurant
+   Price: $1,340 for 5 nights, originally $1,463
+   Rating: 4.73 out of 5 ...
+[2025-05-08 08:59:53.760019] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:59:53.760035] SUCCESS VALUE: True
+[2025-05-08 08:59:53.760049] TOTAL LISTINGS: 18
+[2025-05-08 08:59:53.760064] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:59:53.760078] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 09:14:54.798198] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 09:14:54.798957] Location: Cambridge, London
+[2025-05-08 09:14:54.799025] Additional parameters: {'checkin': '2023-10-21', 'checkout': '2023-10-23', 'adults': 2}
+[2025-05-08 09:14:54.799073] Current time: 2025-05-08T09:14:54.799051
+[2025-05-08 09:14:54.799103] MCP session exists: True
+2025-05-08 09:14:54,799 - mcp_client - INFO - Searching for listings in Cambridge, London with params: {'location': 'Cambridge, London', 'checkin': '2023-10-21', 'checkout': '2023-10-23', 'adults': 2}
+[2025-05-08 09:14:54.799247] CALLING MCP TOOL: airbnb_search with params: {'location': 'Cambridge, London', 'checkin': '2023-10-21', 'checkout': '2023-10-23', 'adults': 2}
+[2025-05-08 09:14:54.799274] MCP CALL START TIME: 2025-05-08T09:14:54.799258
+[2025-05-08 09:14:55.700608] MCP CALL END TIME: 2025-05-08T09:14:55.700517
+[2025-05-08 09:14:55.700679] MCP CALL DURATION: 0.901259 seconds
+[2025-05-08 09:14:55.700702] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 09:14:55.700857] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 09:14:55.700883] FORMATTED OUTPUT CREATED (length: 899)
+[2025-05-08 09:14:55.700900] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN CAMBRIDGE, LONDON
+
+Found 18 listings. Showing top 4:
+
+1. Stunning, Dbl En Suite in Grade II Georgian Home
+   Price: $843 for 5 nights
+   Rating: 5.0 out of 5 average rating,  477 re...
+[2025-05-08 09:14:55.700927] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 09:14:55.700943] SUCCESS VALUE: True
+[2025-05-08 09:14:55.700957] TOTAL LISTINGS: 18
+[2025-05-08 09:14:55.700971] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 09:14:55.700984] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====

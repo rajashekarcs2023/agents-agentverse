@@ -1,0 +1,48 @@
+[2025-05-08 08:34:01] FALLBACK: Calling search_airbnb_listings with location=San Francisco, limit=2
+[2025-05-08 08:34:02] FALLBACK SEARCH RESULT: {'success': True, 'message': 'Successfully retrieved listings', 'formatted_output': 'AIRBNB LISTINGS IN SAN FRANCISCO\n\nFound 18 listings. Showing top 2:\n\n1. Art-centric stay with views from atop Nob Hill\n   Price: $693 for 5 nights\n   Rating: 5.0 out of 5 average rating,  7 reviews\n   ID: 1253655700431755917\n   URL: https://www.airbnb.com/rooms/1253655700431755917\n\n2. #2 24th ave& kirkham st Master king room\n   Price: $485 for 5 nights\n   Rating: 4.89 out of 5 average rating,  149 reviews\n   ID: 41569652\n   URL: https://www.airbnb.com/rooms/41569652\n\n', 'listings': [{'id': '1253655700431755917', 'name': 'Art-centric stay with views from atop Nob Hill', 'price': '$693 for 5 nights', 'rating': '5.0 out of 5 average rating,  7 reviews', 'url': 'https://www.airbnb.com/rooms/1253655700431755917'}, {'id': '41569652', 'name': '#2 24th ave& kirkham st Master king room', 'price': '$485 for 5 nights', 'rating': '4.89 out of 5 average rating,  149 reviews', 'url': 'https://www.airbnb.com/rooms/41569652'}], 'total_listings': 18}
+[2025-05-08 08:34:02] SENDING FORMATTED OUTPUT TO USER (length: 472)
+[2025-05-08 08:34:02] OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 2:
+
+1. Art-centric stay with views from atop Nob Hill
+   Price: $693 for 5 nights
+   Rating: 5.0 out of 5 average rating,  7 reviews
+  ...
+[2025-05-08 08:34:02] CREATING AIRBNB RESPONSE: Here are 2 Airbnb rentals in San Francisco for May 10th, 2025:
+
+1. Art-centric stay with views from atop Nob Hill
+   Price: $693 for 5 nights
+   Rating: 5.0 out of 5 average rating,  7 reviews
+
+2. #2 24th ave& kirkham st Master king room
+   Price: $485 for 5 nights
+   Rating: 4.89 out of 5 average rating,  149 reviews
+
+
+[2025-05-08 08:34:04] AIRBNB RESPONSE SENT SUCCESSFULLY
+[2025-05-08 08:34:06] SENT FOLLOW-UP MESSAGE
+[2025-05-08 08:47:02] FALLBACK: Calling search_airbnb_listings with location=San Francisco, limit=2
+[2025-05-08 08:47:03] FALLBACK SEARCH RESULT: {'success': True, 'message': 'Successfully retrieved listings', 'formatted_output': 'AIRBNB LISTINGS IN SAN FRANCISCO\n\nFound 18 listings. Showing top 2:\n\n1. Stylish Room in The Heart Of San Francisco\n   Price: $590 for 5 nights\n   Rating: 4.76 out of 5 average rating,  531 reviews\n   ID: 1044596955594904812\n   URL: https://www.airbnb.com/rooms/1044596955594904812\n\n2. #2 24th ave& kirkham st Master king room\n   Price: $485 for 5 nights\n   Rating: 4.89 out of 5 average rating,  149 reviews\n   ID: 41569652\n   URL: https://www.airbnb.com/rooms/41569652\n\n', 'listings': [{'id': '1044596955594904812', 'name': 'Stylish Room in The Heart Of San Francisco', 'price': '$590 for 5 nights', 'rating': '4.76 out of 5 average rating,  531 reviews', 'url': 'https://www.airbnb.com/rooms/1044596955594904812'}, {'id': '41569652', 'name': '#2 24th ave& kirkham st Master king room', 'price': '$485 for 5 nights', 'rating': '4.89 out of 5 average rating,  149 reviews', 'url': 'https://www.airbnb.com/rooms/41569652'}], 'total_listings': 18}
+[2025-05-08 08:47:03] SENDING FORMATTED OUTPUT TO USER (length: 471)
+[2025-05-08 08:47:03] OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 2:
+
+1. Stylish Room in The Heart Of San Francisco
+   Price: $590 for 5 nights
+   Rating: 4.76 out of 5 average rating,  531 reviews
+   ...
+[2025-05-08 08:47:03] CREATING AIRBNB RESPONSE: Here are 2 Airbnb rentals in San Francisco for May 10th, 2025:
+
+1. Stylish Room in The Heart Of San Francisco
+   Price: $590 for 5 nights
+   Rating: 4.76 out of 5 average rating,  531 reviews
+
+2. #2 24th ave& kirkham st Master king room
+   Price: $485 for 5 nights
+   Rating: 4.89 out of 5 average rating,  149 reviews
+
+
+[2025-05-08 08:47:03] AIRBNB RESPONSE SENT SUCCESSFULLY
+[2025-05-08 08:47:05] SENT FOLLOW-UP MESSAGE

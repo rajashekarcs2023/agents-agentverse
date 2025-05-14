@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MCP Bridge REST UI</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f6f8fa; }
+    h2 { color: #333; }
+    textarea, input, select { width: 100%; margin-bottom: 1em; font-size: 1em; }
+    button { padding: 0.5em 1em; font-size: 1em; }
+    .result { background: #fff; border: 1px solid #ccc; padding: 1em; margin-top: 1em; }
+    label { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>MCP Bridge REST UI</h2>
+  <form id="rpcForm">
+    <label for="method">Method:</label>
+    <select id="method">
+      <option value="tools/list">tools/list</option>
+      <option value="airbnb_search">airbnb_search</option>
+      <option value="airbnb_listing_details">airbnb_listing_details</option>
+    </select>
+
+    <label for="params">Params (JSON):</label>
+    <textarea id="params" rows="4" placeholder="{}"></textarea>
+
+    <button type="submit">Send Request</button>
+  </form>
+  <div class="result" id="result"></div>
+
+  <script>
+    const form = document.getElementById('rpcForm');
+    const resultDiv = document.getElementById('result');
+    form.onsubmit = async (e) => {
+      e.preventDefault();
+      const method = document.getElementById('method').value;
+      let params = document.getElementById('params').value;
+      try {
+        params = params ? JSON.parse(params) : {};
+      } catch (err) {
+        resultDiv.textContent = 'Invalid JSON in params: ' + err.message;
+        return;
+      }
+      const body = {
+        jsonrpc: "2.0",
+        id: Date.now(),
+        method,
+        params
+      };
+      resultDiv.textContent = 'Sending...';
+      try {
+        const resp = await fetch('http://localhost:9000/jsonrpc', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+        const data = await resp.json();
+        resultDiv.textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        resultDiv.textContent = 'Error: ' + err.message;
+      }
+    };
+  </script>
+</body>
+</html>

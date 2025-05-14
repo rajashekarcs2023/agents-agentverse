@@ -1,0 +1,28 @@
+2025-05-08 10:22:10,076 - mcp_client - INFO - Connecting to Airbnb MCP server
+2025-05-08 10:22:12,153 - mcp_client - INFO - Connected to Airbnb MCP server with tools: ['airbnb_search', 'airbnb_listing_details']
+[2025-05-08 10:24:03.580237] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 10:24:03.580515] Location: Menlo Park
+[2025-05-08 10:24:03.580595] Additional parameters: {'checkin': '2023-10-31', 'checkout': '2023-11-02', 'adults': 2}
+[2025-05-08 10:24:03.580674] Current time: 2025-05-08T10:24:03.580638
+[2025-05-08 10:24:03.580724] MCP session exists: True
+2025-05-08 10:24:03,580 - mcp_client - INFO - Searching for listings in Menlo Park with params: {'location': 'Menlo Park', 'checkin': '2023-10-31', 'checkout': '2023-11-02', 'adults': 2}
+[2025-05-08 10:24:03.580958] CALLING MCP TOOL: airbnb_search with params: {'location': 'Menlo Park', 'checkin': '2023-10-31', 'checkout': '2023-11-02', 'adults': 2}
+[2025-05-08 10:24:03.581005] MCP CALL START TIME: 2025-05-08T10:24:03.580976
+[2025-05-08 10:24:04.746516] MCP CALL END TIME: 2025-05-08T10:24:04.746424
+[2025-05-08 10:24:04.746599] MCP CALL DURATION: 1.165448 seconds
+[2025-05-08 10:24:04.746622] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 10:24:04.746762] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 10:24:04.746793] FORMATTED OUTPUT CREATED (length: 928)
+[2025-05-08 10:24:04.746809] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN MENLO PARK
+
+Found 18 listings. Showing top 4:
+
+1. Quaint Cottage Near Downtown Palo Alto
+   Price: $1,369 for 5 nights
+   Rating: 4.99 out of 5 average rating,  124 reviews
+   ID: 3...
+[2025-05-08 10:24:04.746826] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 10:24:04.746847] SUCCESS VALUE: True
+[2025-05-08 10:24:04.746861] TOTAL LISTINGS: 18
+[2025-05-08 10:24:04.746878] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 10:24:04.746891] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====

@@ -1,0 +1,18 @@
+{
+    "airbnb_mcp_agent": {
+        "identity_key": "23ae90119129644b424291cff04c559be5f62a36965859b00e2c068fff005583",
+        "wallet_key": "HqHC0rtRzTwUFT7kLLy/CoKq3Y62QKIOTG3JvTxlrG8="
+    },
+    "test_agent": {
+        "identity_key": "b3dba99a63e804187d1dd25879299f32092153c10bba000238dcf882a29561d5",
+        "wallet_key": "2c+knIYQn8wDjMUTI9XBoj5RYx4RSjmBYG+EWFKmjzA="
+    },
+    "mcp_client": {
+        "identity_key": "c2c361269e52305a85ddd93cfbde712293d6d14c16df05a7a703de671c1a7dd2",
+        "wallet_key": "FumIJ90tJfAF8o/10oHgymRdtWE2cRbY4lLxAVYte5g="
+    },
+    "mcp_tool_client": {
+        "identity_key": "80a17f9dcac9dc579c7577ba511ce8551ef5a719cd20eb2459c4eb5073a265fa",
+        "wallet_key": "0ev8fkrxe8xmEXZM+Xyyz1nkZD7dZvGA0nfvmMp6lKQ="
+    }
+}

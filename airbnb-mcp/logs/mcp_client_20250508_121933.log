@@ -1,0 +1,2 @@
+2025-05-08 12:19:34,509 - mcp_client - INFO - Connecting to Airbnb MCP server
+2025-05-08 12:19:36,204 - mcp_client - INFO - Connected to Airbnb MCP server with tools: ['airbnb_search', 'airbnb_listing_details']

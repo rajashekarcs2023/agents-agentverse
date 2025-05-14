@@ -1,0 +1,23 @@
+[2025-05-08 08:00:58] FALLBACK: Calling search_airbnb_listings with location=San Francisco, limit=2
+[2025-05-08 08:00:59] FALLBACK SEARCH RESULT: {'success': True, 'message': 'Successfully retrieved listings', 'formatted_output': 'AIRBNB LISTINGS IN SAN FRANCISCO\n\nFound 18 listings. Showing top 2:\n\n1. Spot-on location for classic San Fran must-do’s\n   Price: $532 for 5 nights\n   Rating: 4.68 out of 5 average rating,  412 reviews\n   ID: 1116812632361845785\n   URL: https://www.airbnb.com/rooms/1116812632361845785\n\n2. Sunset in the city 1\n   Price: $399 for 5 nights\n   Rating: 4.89 out of 5 average rating,  196 reviews\n   ID: 844937676892217546\n   URL: https://www.airbnb.com/rooms/844937676892217546\n\n', 'listings': [{'id': '1116812632361845785', 'name': 'Spot-on location for classic San Fran must-do’s', 'price': '$532 for 5 nights', 'rating': '4.68 out of 5 average rating,  412 reviews', 'url': 'https://www.airbnb.com/rooms/1116812632361845785'}, {'id': '844937676892217546', 'name': 'Sunset in the city 1', 'price': '$399 for 5 nights', 'rating': '4.89 out of 5 average rating,  196 reviews', 'url': 'https://www.airbnb.com/rooms/844937676892217546'}], 'total_listings': 18}
+[2025-05-08 08:00:59] SENDING FORMATTED OUTPUT TO USER (length: 476)
+[2025-05-08 08:00:59] OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 2:
+
+1. Spot-on location for classic San Fran must-do’s
+   Price: $532 for 5 nights
+   Rating: 4.68 out of 5 average rating,  412 review...
+[2025-05-08 08:00:59] CREATING AIRBNB RESPONSE: Here are 2 Airbnb rentals in San Francisco for May 10th, 2025:
+
+1. Spot-on location for classic San Fran must-do’s
+   Price: $532 for 5 nights
+   Rating: 4.68 out of 5 average rating,  412 reviews
+
+2. Sunset in the city 1
+   Price: $399 for 5 nights
+   Rating: 4.89 out of 5 average rating,  196 reviews
+
+
+[2025-05-08 08:01:00] AIRBNB RESPONSE SENT SUCCESSFULLY
+[2025-05-08 08:01:02] SENT FOLLOW-UP MESSAGE

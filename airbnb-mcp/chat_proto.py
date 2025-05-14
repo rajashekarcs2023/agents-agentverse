@@ -54,7 +54,7 @@ def log_to_file(message: str):
         f.write(f"[{timestamp}] {message}\n")
 
 # OpenAI Agent address for structured output
-AI_AGENT_ADDRESS = 'agent1q0h70caed8ax769shpemapzkyk65uscw4xwk6dc4t3emvp5jdcvqs9xs32y'
+AI_AGENT_ADDRESS = 'agent1qtlpfshtlcxekgrfcpmv7m9zpajuwu7d5jfyachvpa4u3dkt6k0uwwp2lct'
 
 def create_text_chat(text: str, end_session: bool = True) -> ChatMessage:
     """Create a chat message with text content and optional end session marker"""

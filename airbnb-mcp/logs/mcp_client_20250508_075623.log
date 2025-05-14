@@ -1,0 +1,157 @@
+2025-05-08 07:56:24,900 - mcp_client - INFO - Connecting to Airbnb MCP server
+2025-05-08 07:56:25,921 - mcp_client - INFO - Connected to Airbnb MCP server with tools: ['airbnb_search', 'airbnb_listing_details']
+[2025-05-08 07:56:36.946009] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 07:56:36.946108] Location: Los Angeles
+[2025-05-08 07:56:36.946158] Additional parameters: {'checkin': '2023-05-10', 'checkout': '2023-05-13', 'adults': 2}
+[2025-05-08 07:56:36.946205] Current time: 2025-05-08T07:56:36.946178
+[2025-05-08 07:56:36.946246] MCP session exists: True
+2025-05-08 07:56:36,946 - mcp_client - INFO - Searching for listings in Los Angeles with params: {'location': 'Los Angeles', 'checkin': '2023-05-10', 'checkout': '2023-05-13', 'adults': 2}
+[2025-05-08 07:56:36.946352] CALLING MCP TOOL: airbnb_search with params: {'location': 'Los Angeles', 'checkin': '2023-05-10', 'checkout': '2023-05-13', 'adults': 2}
+[2025-05-08 07:56:36.946391] MCP CALL START TIME: 2025-05-08T07:56:36.946368
+[2025-05-08 07:56:37.953667] MCP CALL END TIME: 2025-05-08T07:56:37.953563
+[2025-05-08 07:56:37.953749] MCP CALL DURATION: 1.007195 seconds
+[2025-05-08 07:56:37.953773] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 07:56:37.954098] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 07:56:37.954127] FORMATTED OUTPUT CREATED (length: 858)
+[2025-05-08 07:56:37.954153] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN LOS ANGELES
+
+Found 18 listings. Showing top 4:
+
+1. Hollywood Hilltop Studio & Views
+   Price: $769 for 5 nights
+   Rating: 4.88 out of 5 average rating,  8 reviews
+   ID: 1332672423...
+[2025-05-08 07:56:37.954170] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 07:56:37.954185] SUCCESS VALUE: True
+[2025-05-08 07:56:37.954200] TOTAL LISTINGS: 18
+[2025-05-08 07:56:37.954213] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 07:56:37.954230] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 07:56:39.184002] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 07:56:39.184345] Location: Los Angeles
+[2025-05-08 07:56:39.184558] Additional parameters: {'checkin': '2025-05-15', 'adults': 2}
+[2025-05-08 07:56:39.184757] Current time: 2025-05-08T07:56:39.184652
+[2025-05-08 07:56:39.184925] MCP session exists: True
+2025-05-08 07:56:39,185 - mcp_client - INFO - Searching for listings in Los Angeles with params: {'location': 'Los Angeles', 'checkin': '2025-05-15', 'adults': 2}
+[2025-05-08 07:56:39.185269] CALLING MCP TOOL: airbnb_search with params: {'location': 'Los Angeles', 'checkin': '2025-05-15', 'adults': 2}
+[2025-05-08 07:56:39.185443] MCP CALL START TIME: 2025-05-08T07:56:39.185351
+[2025-05-08 07:56:39.937727] MCP CALL END TIME: 2025-05-08T07:56:39.937639
+[2025-05-08 07:56:39.937806] MCP CALL DURATION: 0.752288 seconds
+[2025-05-08 07:56:39.937845] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 07:56:39.938053] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 07:56:39.938123] FORMATTED OUTPUT CREATED (length: 892)
+[2025-05-08 07:56:39.938158] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN LOS ANGELES
+
+Found 18 listings. Showing top 4:
+
+1. Hollywood History Lives Here
+   Price: $105 for 1 night
+   Rating: 4.86 out of 5 average rating,  83 reviews
+   ID: 12326855463149...
+[2025-05-08 07:56:39.938229] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 07:56:39.938272] SUCCESS VALUE: True
+[2025-05-08 07:56:39.938315] TOTAL LISTINGS: 18
+[2025-05-08 07:56:39.938346] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 07:56:39.938377] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 07:56:41.284155] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 07:56:41.284229] Location: LA
+[2025-05-08 07:56:41.284259] Additional parameters: {'adults': 2}
+[2025-05-08 07:56:41.284287] Current time: 2025-05-08T07:56:41.284272
+[2025-05-08 07:56:41.284310] MCP session exists: True
+2025-05-08 07:56:41,284 - mcp_client - INFO - Searching for listings in LA with params: {'location': 'LA', 'adults': 2}
+[2025-05-08 07:56:41.284365] CALLING MCP TOOL: airbnb_search with params: {'location': 'LA', 'adults': 2}
+[2025-05-08 07:56:41.284407] MCP CALL START TIME: 2025-05-08T07:56:41.284391
+[2025-05-08 07:56:42.020370] MCP CALL END TIME: 2025-05-08T07:56:42.020293
+[2025-05-08 07:56:42.020448] MCP CALL DURATION: 0.735902 seconds
+[2025-05-08 07:56:42.020478] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 07:56:42.020642] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 07:56:42.020672] FORMATTED OUTPUT CREATED (length: 853)
+[2025-05-08 07:56:42.020693] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN LA
+
+Found 18 listings. Showing top 4:
+
+1. MGM 30814 1BR Signature with Balcony
+   Price: $307 for 5 nights
+   Rating: 4.68 out of 5 average rating,  34 reviews
+   ID: 71228950077374...
+[2025-05-08 07:56:42.020715] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 07:56:42.020735] SUCCESS VALUE: True
+[2025-05-08 07:56:42.020753] TOTAL LISTINGS: 18
+[2025-05-08 07:56:42.020772] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 07:56:42.020790] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 07:56:43.561597] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 07:56:43.561763] Location: LA
+[2025-05-08 07:56:43.561825] Additional parameters: {'adults': 2}
+[2025-05-08 07:56:43.561880] Current time: 2025-05-08T07:56:43.561848
+[2025-05-08 07:56:43.561925] MCP session exists: True
+2025-05-08 07:56:43,561 - mcp_client - INFO - Searching for listings in LA with params: {'location': 'LA', 'adults': 2}
+[2025-05-08 07:56:43.562045] CALLING MCP TOOL: airbnb_search with params: {'location': 'LA', 'adults': 2}
+[2025-05-08 07:56:43.562088] MCP CALL START TIME: 2025-05-08T07:56:43.562063
+[2025-05-08 07:56:44.376934] MCP CALL END TIME: 2025-05-08T07:56:44.376845
+[2025-05-08 07:56:44.377020] MCP CALL DURATION: 0.814782 seconds
+[2025-05-08 07:56:44.377053] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 07:56:44.377218] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 07:56:44.377247] FORMATTED OUTPUT CREATED (length: 854)
+[2025-05-08 07:56:44.377268] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN LA
+
+Found 18 listings. Showing top 4:
+
+1. King Room - 1 bed
+   Price: $206 for 5 nights
+   Rating: 4.57 out of 5 average rating,  237 reviews
+   ID: 839754774845879884
+   URL: https...
+[2025-05-08 07:56:44.377289] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 07:56:44.377308] SUCCESS VALUE: True
+[2025-05-08 07:56:44.377326] TOTAL LISTINGS: 18
+[2025-05-08 07:56:44.377343] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 07:56:44.377360] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:00:58.151636] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:00:58.151691] Location: San Francisco
+[2025-05-08 08:00:58.151727] Additional parameters: {}
+[2025-05-08 08:00:58.151762] Current time: 2025-05-08T08:00:58.151741
+[2025-05-08 08:00:58.151792] MCP session exists: True
+2025-05-08 08:00:58,151 - mcp_client - INFO - Searching for listings in San Francisco with params: {'location': 'San Francisco'}
+[2025-05-08 08:00:58.151930] CALLING MCP TOOL: airbnb_search with params: {'location': 'San Francisco'}
+[2025-05-08 08:00:58.151963] MCP CALL START TIME: 2025-05-08T08:00:58.151943
+[2025-05-08 08:00:59.357752] MCP CALL END TIME: 2025-05-08T08:00:59.357673
+[2025-05-08 08:00:59.357830] MCP CALL DURATION: 1.20573 seconds
+[2025-05-08 08:00:59.357860] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:00:59.358024] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:00:59.359498] FORMATTED OUTPUT CREATED (length: 476)
+[2025-05-08 08:00:59.359534] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN SAN FRANCISCO
+
+Found 18 listings. Showing top 2:
+
+1. Spot-on location for classic San Fran must-do’s
+   Price: $532 for 5 nights
+   Rating: 4.68 out of 5 average rating,  412 review...
+[2025-05-08 08:00:59.359562] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:00:59.359583] SUCCESS VALUE: True
+[2025-05-08 08:00:59.359603] TOTAL LISTINGS: 18
+[2025-05-08 08:00:59.359630] SIMPLIFIED LISTINGS COUNT: 2
+[2025-05-08 08:00:59.359647] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
+[2025-05-08 08:01:09.915003] ==== SEARCH REQUEST STARTED ====
+[2025-05-08 08:01:09.915093] Location: Arizona State University
+[2025-05-08 08:01:09.915145] Additional parameters: {'checkin': '2023-05-11', 'checkout': '2023-05-15', 'adults': 2}
+[2025-05-08 08:01:09.915193] Current time: 2025-05-08T08:01:09.915163
+[2025-05-08 08:01:09.915236] MCP session exists: True
+2025-05-08 08:01:09,915 - mcp_client - INFO - Searching for listings in Arizona State University with params: {'location': 'Arizona State University', 'checkin': '2023-05-11', 'checkout': '2023-05-15', 'adults': 2}
+[2025-05-08 08:01:09.915345] CALLING MCP TOOL: airbnb_search with params: {'location': 'Arizona State University', 'checkin': '2023-05-11', 'checkout': '2023-05-15', 'adults': 2}
+[2025-05-08 08:01:09.915387] MCP CALL START TIME: 2025-05-08T08:01:09.915361
+[2025-05-08 08:01:10.984054] MCP CALL END TIME: 2025-05-08T08:01:10.983962
+[2025-05-08 08:01:10.984132] MCP CALL DURATION: 1.068601 seconds
+[2025-05-08 08:01:10.984159] MCP CALL SUCCESS: Tool call completed
+[2025-05-08 08:01:10.984321] CREATING FORMATTED OUTPUT FOR SEARCH RESULTS
+[2025-05-08 08:01:10.984349] FORMATTED OUTPUT CREATED (length: 903)
+[2025-05-08 08:01:10.984369] FORMATTED OUTPUT SAMPLE: AIRBNB LISTINGS IN ARIZONA STATE UNIVERSITY
+
+Found 18 listings. Showing top 4:
+
+1. *Best Location!*Walk to ASU!*Central Tempe Condo*
+   Price: $597 for 5 nights, originally $661
+   Rating: 4.87 out of...
+[2025-05-08 08:01:10.984391] RESULT DICTIONARY CREATED WITH KEYS: success, message, formatted_output, listings, total_listings
+[2025-05-08 08:01:10.984410] SUCCESS VALUE: True
+[2025-05-08 08:01:10.984428] TOTAL LISTINGS: 18
+[2025-05-08 08:01:10.984445] SIMPLIFIED LISTINGS COUNT: 4
+[2025-05-08 08:01:10.984461] ==== SEARCH REQUEST COMPLETED SUCCESSFULLY ====
