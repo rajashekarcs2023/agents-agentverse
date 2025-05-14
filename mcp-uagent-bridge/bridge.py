@@ -88,48 +88,7 @@ class UAgentBridgeClient:
 bridge_client = UAgentBridgeClient(UAGENT_SERVER_ADDRESS, port=CLIENT_AGENT_PORT)
 
 # Define a static TOOLS list for tools/list
-TOOLS = [
-    {
-        "name": "airbnb_search",
-        "description": "Search for Airbnb listings with various filters and pagination. Provide direct links to the user",
-        "inputSchema": {
-            "type": "object",
-            "properties": {
-                "location": {"type": "string", "description": "Location to search for (city, state, etc.)"},
-                "placeId": {"type": "string", "description": "Google Maps Place ID (overrides the location parameter)"},
-                "checkin": {"type": "string", "description": "Check-in date (YYYY-MM-DD)"},
-                "checkout": {"type": "string", "description": "Check-out date (YYYY-MM-DD)"},
-                "adults": {"type": "number", "description": "Number of adults"},
-                "children": {"type": "number", "description": "Number of children"},
-                "infants": {"type": "number", "description": "Number of infants"},
-                "pets": {"type": "number", "description": "Number of pets"},
-                "minPrice": {"type": "number", "description": "Minimum price for the stay"},
-                "maxPrice": {"type": "number", "description": "Maximum price for the stay"},
-                "cursor": {"type": "string", "description": "Base64-encoded string used for Pagination"},
-                "ignoreRobotsText": {"type": "boolean", "description": "Ignore robots.txt rules for this request"}
-            },
-            "required": ["location"]
-        }
-    },
-    {
-        "name": "airbnb_listing_details",
-        "description": "Get detailed information about a specific Airbnb listing. Provide direct links to the user",
-        "inputSchema": {
-            "type": "object",
-            "properties": {
-                "id": {"type": "string", "description": "The Airbnb listing ID"},
-                "checkin": {"type": "string", "description": "Check-in date (YYYY-MM-DD)"},
-                "checkout": {"type": "string", "description": "Check-out date (YYYY-MM-DD)"},
-                "adults": {"type": "number", "description": "Number of adults"},
-                "children": {"type": "number", "description": "Number of children"},
-                "infants": {"type": "number", "description": "Number of infants"},
-                "pets": {"type": "number", "description": "Number of pets"},
-                "ignoreRobotsText": {"type": "boolean", "description": "Ignore robots.txt rules for this request"}
-            },
-            "required": ["id"]
-        }
-    }
-]
+
 
 async def handle_jsonrpc(request):
     try:
@@ -157,28 +116,27 @@ async def handle_jsonrpc(request):
         else:
             resp = await bridge_client.call_tool(method, params)
         logger.info(f"[bridge] Received from uAgent: {resp}")
-        # --- Output formatting polish ---
+        # --- Match official Airbnb MCP server response format exactly ---
         if resp.success:
+            # Only keep the 'content' key and 'isError' if present
             result = resp.result
+            # Remove any extra keys (like 'meta', 'annotations') for parity
+            if isinstance(result, dict):
+                filtered_result = {}
+                if 'content' in result:
+                    # Only keep 'type', 'text' in each content item
+                    filtered_content = []
+                    for item in result['content']:
+                        filtered_item = {
+                            'type': item.get('type', 'text'),
+                            'text': item.get('text', '')
+                        }
+                        filtered_content.append(filtered_item)
+                    filtered_result['content'] = filtered_content
+                if 'isError' in result:
+                    filtered_result['isError'] = result['isError']
+                result = filtered_result
             error = None
-            # If result is a dict with a 'content' key that is a list of dicts with type 'text',
-            # and the 'text' is itself a JSON string, parse and pretty-print it
-            if (
-                isinstance(result, dict)
-                and 'content' in result
-                and isinstance(result['content'], list)
-                and len(result['content']) > 0
-                and isinstance(result['content'][0], dict)
-                and result['content'][0].get('type') == 'text'
-                and isinstance(result['content'][0].get('text'), str)
-            ):
-                import json as _json
-                try:
-                    parsed = _json.loads(result['content'][0]['text'])
-                    result['content'][0]['text'] = _json.dumps(parsed, indent=2, ensure_ascii=False)
-                except Exception:
-                    # If not JSON, leave as is
-                    pass
         else:
             result = None
             error = resp.error or "Unknown error"
